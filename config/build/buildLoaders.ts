@@ -1,6 +1,7 @@
 import webpack from "webpack";
 import { BuildOptions } from "./types/config";
 import { buildBabelLoader } from "./loaders/buildBabelLoader";
+import { buildCssLoader } from "./loaders/buildCssLoader";
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
   const tsLoader = {
@@ -9,10 +10,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/,
   };
 
-  const cssLoader = {
-    test: /\.css$/,
-    use: ["style-loader", "css-loader"],
-  };
+  const cssLoader = buildCssLoader(options.isDev);
 
   const imgLoader = {
     test: /\.(png|jpg|gif|svg)$/,
