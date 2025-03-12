@@ -12,12 +12,12 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 
   const cssLoader = buildCssLoader(options.isDev);
 
-  const imgLoader = {
+  const fileLoader = {
     test: /\.(png|jpg|gif|svg)$/,
     use: ["file-loader"],
   };
 
   const babelLoader = buildBabelLoader(options);
 
-  return [tsLoader, cssLoader, imgLoader, babelLoader];
+  return [fileLoader, tsLoader, cssLoader, babelLoader];
 }
