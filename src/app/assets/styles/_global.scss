@@ -1,0 +1,26 @@
+@use "vars" as *;
+
+.visible {
+  display: block !important;
+}
+
+.wr {
+  max-width: ($page_wr + px);
+  margin: 0 auto;
+  padding: 0 ($wr_pad + px);
+  position: relative;
+}
+
+.main-svg {
+  opacity: 0;
+  height: 0;
+}
+
+.hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

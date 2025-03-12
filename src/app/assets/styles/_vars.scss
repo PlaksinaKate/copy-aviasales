@@ -1,0 +1,209 @@
+/* FONTS */
+
+/* font family */
+$ff: -apple-system, Roboto, "Currency Font", Helvetica, Arial, sans-serif;
+$ff-brand: Stapel, -apple-system, BlinkMacSystemFont, Inter, Roboto, Helvetica,
+  Arial, sans-serif;
+
+$fs: 15; // font size
+$lh: 1.5; // line height
+
+/* END FONTS */
+
+/* GRID */
+
+$space: 8; // spacing grid
+$grid_pad: 15; // padding column
+$wr_pad: 20; // wrapper padding
+$big_pad: 8.43; // big padding
+$page_wr: 1116px + ($wr_pad * 2); // max-width content
+
+/* media */
+$media: (
+  desktop_l: 2560,
+  // desktop long
+  desktop_m: 1920,
+  // desktop middle
+  desktop_s: 1500,
+
+  // desktop small
+  tablet_l: 1280,
+  // tablet long
+  tablet_m: 1024,
+  // tablet middle
+  tablet_s: 900,
+
+  //tablet small
+  mobile_l: 768,
+  // mobile long
+  mobile_m: 475,
+  // mobile middle
+  mobile_s: 375,
+  // mobile small
+  mobile_xs: 320,
+
+  // mobile extra small (not used)
+);
+
+/* END GRID */
+
+/* COLOR */
+
+$brand_primary_800: #0656fe;
+$brand_primary_500: #0c73fe;
+$brand_primary_300: #6ebaff;
+$brand_primary_200: #a3d3ff;
+$brand_primary_50: #daeaff;
+$brand_primary_25: #e8f4ff;
+// Yellow
+$yellow-300: #ffc562;
+$yellow-200: #ffd690;
+$yellow-100: #ffe7be;
+$yellow-50: #fff7e8;
+
+// Purple
+$purple-800: #8c59ff;
+$purple-500: #a179ff;
+$purple-300: #bfa4ff;
+$purple-200: #d6c4ff;
+$purple-100: #e5d9ff;
+$purple-50: #f5f1ff;
+
+$ink_800: #0c131d;
+
+// Pink
+$pink-800: #ec4391;
+$pink-500: #ff5ea9;
+$pink-300: #ff92c5;
+$pink-200: #ffb2d6;
+$pink-100: #ffd2e7;
+$pink-50: #ffeef6;
+
+// Blue
+$blue-800: #1c98e1;
+$blue-500: #25aff8;
+$blue-300: #6bc9fa;
+$blue-200: #97d9fc;
+$blue-100: #c2e9fd;
+$blue-50: #e9f6fe;
+
+// Fog
+$fog-800: #57799e;
+$fog-500: #6c8db7;
+$fog-300: #99b0cd;
+$fog-200: #b7c7db;
+$fog-100: #d5dfea;
+$fog-50: #f0f3f7;
+
+// Orange
+$orange-800: #f25122;
+$orange-500: #fa742d;
+$orange-300: #ffa06c;
+$orange-200: #ffbc97;
+$orange-100: #ffd8c3;
+$orange-50: #fef1e9;
+
+// Brand Shading
+$brand-shading: rgba(12, 115, 254, 0.1);
+$yellow-shading: rgba(255, 170, 24, 0.1);
+$orange-shading: rgba(250, 116, 45, 0.1);
+$red-shading: rgba(249, 86, 103, 0.1);
+$green-shading: rgba(59, 191, 86, 0.1);
+$blue-shading: rgba(37, 175, 248, 0.1);
+$purple-shading: rgba(161, 121, 255, 0.1);
+$pink-shading: rgba(255, 94, 169, 0.1);
+$fog-shading: rgba(105, 139, 181, 0.1);
+
+// Gradients
+$accent-more-start: #a266eb;
+$accent-more-end: #20a0ff;
+$more-pink: #ffb8d7;
+$more-blue: #9ad3ff;
+
+$lilac-gradient: linear-gradient(246.03deg, #91a2ff 15.39%, #9f87ff 84.61%);
+$green-gradient: linear-gradient(90deg, #59c979, #92cf48);
+$blue-gradient: linear-gradient(90deg, #18bde7, #5ed1eb 61.98%);
+$gray-gradient: linear-gradient(90deg, #bfc5c4, #d2d9d7);
+$purpleblue-horizontal-gradient: linear-gradient(
+  90deg,
+  $accent-more-start,
+  $accent-more-end
+);
+$purpleblue-vertical-gradient: linear-gradient(
+  0deg,
+  $accent-more-start,
+  $accent-more-end
+);
+$more-gradient-pinkvioletblue: linear-gradient(
+  90deg,
+  $more-pink,
+  #dfcdff 50%,
+  $more-blue
+);
+$more-gradient-pinkvioletblue-dim: linear-gradient(
+  90deg,
+  #e5a1be,
+  #cfb9f5 50%,
+  #82c0f0
+);
+$more-gradient-pinkvioletblue-dim-25: linear-gradient(
+  90deg,
+  rgba(229, 161, 190, 0.15),
+  rgba(207, 185, 245, 0.15) 50%,
+  rgba(130, 192, 240, 0.15)
+);
+
+// Social Colors
+$social-vk-800: #026ae2;
+$social-vk-500: #07f;
+$social-fb-800: #2e4575;
+$social-fb-500: #3c5a99;
+$social-twitter-800: #2194cf;
+$social-twitter-500: #41abe1;
+$social-ok-800: #df7306;
+$social-ok-500: #f98d20;
+$social-mailru-800: #1347e9;
+$social-mailru-500: #2063f0;
+$social-google-800: #c63224;
+$social-google-500: #dc4e41;
+$social-yandex-800: #ba2222;
+$social-yandex-500: #da3332;
+$social-wechat-800: #5e9a1d;
+$social-wechat-500: #7bb32e;
+$social-line-800: #00ae00;
+$social-line-500: #00c300;
+$social-telegram-800: #0078b5;
+$social-telegram-500: #08c;
+$social-whatsapp-800: #20b859;
+$social-whatsapp-500: #25d366;
+$social-aeroflot-800: #00244d;
+$social-aeroflot-500: #003d82;
+$social-kiwicom-800: #00937b;
+$social-kiwicom-500: #00ad98;
+$social-viber-800: #5946dc;
+$social-viber-500: #7360f2;
+$social-apple-500: #000;
+$social-yahoo-500: #5f01d1;
+$social-yahoo-800: #4f01ac;
+$social-x-twitter-500: #000;
+
+// Dark Muted Colors
+$brand-dark-muted: #193358;
+$orange-dark-muted: #533729;
+$red-dark-muted: #533136;
+$blue-dark-muted: #214355;
+$purple-dark-muted: #403857;
+$green-dark-muted: #294731;
+$yellow-dark-muted: #544224;
+$pink-dark-muted: #553244;
+$fog-dark-muted: #303944;
+
+/* END COLOR */
+
+/* ANIMATE */
+
+$as: 0.45s; // animation speed
+$ar: $as * 50; // animation rotation
+$ae: ease-out; // animation easing
+
+/* END ANIMATE */
