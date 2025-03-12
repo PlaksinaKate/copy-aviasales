@@ -20,7 +20,9 @@
   "dependencies": {
     "babel-plugin-i18next-extract": "^1.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.3.0",
+    "sass": "^1.85.1"
   },
   "devDependencies": {
     "@babel/core": "^7.26.8",
@@ -56,6 +58,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "mini-css-extract-plugin": "^2.9.2",
     "react-refresh": "^0.16.0",
+    "sass-loader": "^16.0.5",
     "storybook": "^8.5.7",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
