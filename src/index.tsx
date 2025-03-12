@@ -1,12 +1,17 @@
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routes from "routes";
+import React from "react";
+import "app/assets/styles/main.scss";
 
-const rootElement = document.getElementById("root");
-
-if (!rootElement) {
-  throw new Error(
-    "Root element not found. Make sure you have <div id='root'></div> in your index.html"
-  );
+const router = createBrowserRouter(routes);
+const container = document.getElementById("root");
+if (!container) {
+  throw new Error("Root container not found");
 }
 
-const root = ReactDOM.createRoot(rootElement);
-root.render("Hello");
+ReactDOM.createRoot(container).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
